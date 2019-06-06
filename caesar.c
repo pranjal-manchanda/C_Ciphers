@@ -1,3 +1,7 @@
+/*
+    Program receives 2 command line arguments (plaintext and encryption key)
+    from the user and converts the text into encrypted code using Caesar's cipher
+*/
 #include <cs50.h>
 #include <ctype.h> //Check isupper/islower/isalpha
 #include <stdio.h>
@@ -5,6 +9,11 @@
 #include <string.h> //strlen
 
 int main(int argc, string argv[])
+    /*
+        Function expects to receive 2 command line arguments:
+            - 1st argument is the plaintext to be encrypted
+            - 2nd argument is the encryption key (an int) to use
+    */
 {
     if (argc != 2) //Ensure that 2 arguments were passed in (first is the program name)
     {
